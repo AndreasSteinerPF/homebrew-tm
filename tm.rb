@@ -5,21 +5,21 @@
 class Tm < Formula
   desc "Git-backed collaborative memory ledger for coding agents"
   homepage "https://github.com/AndreasSteinerPF/team-memory"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/AndreasSteinerPF/team-memory/releases/download/v0.6.0/tm_0.6.0_darwin_amd64.tar.gz"
-      sha256 "69733830879ea7971dbed182a312da434d569ecd25b1f6e25ff813c69b857ac7"
+      url "https://github.com/AndreasSteinerPF/team-memory/releases/download/v0.6.1/tm_0.6.1_darwin_amd64.tar.gz"
+      sha256 "cb38a1e611ae3657969e6b89be1f47b0e4f235834155afa6ec74ab5f7267fef9"
 
       define_method(:install) do
         bin.install "tm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/AndreasSteinerPF/team-memory/releases/download/v0.6.0/tm_0.6.0_darwin_arm64.tar.gz"
-      sha256 "8142275ea54dcd3e1ebe91c74c900ea8f4c8116b507e16a6f81cf9711dfcf3cf"
+      url "https://github.com/AndreasSteinerPF/team-memory/releases/download/v0.6.1/tm_0.6.1_darwin_arm64.tar.gz"
+      sha256 "f23d2d9b0fd8a1b5cd660db07202f4bdc770d0f1fc105616538126993f4936c1"
 
       define_method(:install) do
         bin.install "tm"
@@ -29,15 +29,15 @@ class Tm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AndreasSteinerPF/team-memory/releases/download/v0.6.0/tm_0.6.0_linux_amd64.tar.gz"
-      sha256 "806d2f281de8da1e60b61c116ce38d02531d68908307eaf7f8414d0f1100c554"
+      url "https://github.com/AndreasSteinerPF/team-memory/releases/download/v0.6.1/tm_0.6.1_linux_amd64.tar.gz"
+      sha256 "1ead0cc606d20a64799abe5c8c72b762f3d633b494efa2538378c738f455a878"
       define_method(:install) do
         bin.install "tm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AndreasSteinerPF/team-memory/releases/download/v0.6.0/tm_0.6.0_linux_arm64.tar.gz"
-      sha256 "9e6848ed67b02e3ad06fdda8982e9143406a6cfe855c70d64f665602651d8489"
+      url "https://github.com/AndreasSteinerPF/team-memory/releases/download/v0.6.1/tm_0.6.1_linux_arm64.tar.gz"
+      sha256 "71eb573d03df7d79db1728f1cfa29eeab4759c07693e45813573f1be427a9c5c"
       define_method(:install) do
         bin.install "tm"
       end
